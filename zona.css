@@ -1,0 +1,158 @@
+body {
+  /*-moz-osx-font-smoothing:grayscale;
+  -ms-flex-direction:column;
+  -webkit-box-direction:normal;
+  -webkit-box-orient:vertical;
+  -webkit-font-smoothing:antialiased; */
+  background:#f5f5f5;
+  color:rgb(255, 255, 255);
+  display:flex;
+  flex-direction:column;
+  font-family:Montserrat, sans-serif;
+  font-size: 1em;
+  font-weight:300;
+  margin:0;
+  min-height:100vh;
+  padding:5%;
+  background-image:url(fundo7.jpeg);
+  background-repeat:no-repeat;
+  background-size:100%;/*1400px 700px;*/
+  background-attachment:fixed;
+  }
+  
+
+  
+  #texto{
+    position: absolute;
+    left:500px; /* posiciona a 90px para a esquerda */ 
+    top: 300px; /* posiciona a 70px para baixo */
+    color:	#ffffff	;
+    font-size: 20px;
+    padding-right: 5%;
+  
+  }
+  
+  /*Fomatação das imagens nas páginas dos livros*/
+  #img1_1{
+    /*position: absolute;*/
+    left: 90px; /* posiciona a 90px para a esquerda */ 
+    top: 200px; /* posiciona a 70px para baixo */
+    max-height: 400px;
+    max-width: 550px;
+    width: 280px;
+    height: 380px;
+  
+  }
+  
+  
+  
+  /*Formatação do menu superior do site*/
+  nav {
+    margin: 0 auto;
+    max-width: 800px;
+    background: #000000;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
+  }
+  
+  nav::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in-out;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background: rgba(0, 0, 0, .15);
+  }
+  
+  nav ul li a:focus {
+    color: white;
+  }
+  
+  nav ul li a:not(:only-child)::after {
+    padding-left: 4px;
+    content: ' ▾';
+  }
+  
+  nav ul li ul li {
+    min-width: 190px;
+  }
+  
+  nav ul li ul li a {
+    background: transparent;
+    color: #555;
+    border-bottom: 1px solid #DDE0E7;
+  }
+  
+  nav ul li ul li a:hover,
+  nav ul li ul li a:focus {
+    background: #eee;
+    color: #111;
+  }
+  
+  /*estilo do botão submit */
+  input[type="submit"]{
+    width: 100%!important;
+    cursor: pointer;  
+    background: rgb(61, 157, 179);
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff;   
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+   
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+   
+    transition: all 0.2s linear;
+  }
+   
+  /*estilo do botão ao passar o mouse */
+  input[type="submit"]:hover{
+    background: #4ab3c6;
+  }
+  
+  .com{
+    width:100%;
+    align-items: center;
+  }
+  
+  #coment{
+    /* position: absolute;*/
+   top: 700px;
+   width: 50%;   
+   padding: 18px 6% 60px 6%;
+   margin: 0 0 35px 0;
+   border: 1px solid rgba(1, 1, 1,0.8);
+   -webkit-box-shadow: 5px;
+   border-radius: 5px;
+   -webkit-animation-duration: 0.5s;
+   -webkit-animation-timing-function: ease;
+   -webkit-animation-fill-mode: both;
+   
+   animation-duration: 0.5s;
+   animation-timing-function: ease;
+   animation-fill-mode: both;
+   }
